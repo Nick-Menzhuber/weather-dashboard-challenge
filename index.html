@@ -20,74 +20,74 @@
     <header class="header col-12 container-fluid">
         Weather Dashboard
     </header>
-
-    <div class="city-search col-3">
-        <div class="row">
-            <input type="search" placeholder="Minneapolis">
-            <button type="button" class=" search-btn btn btn-primary">Search</button>
-            <button type="button" class="btn btn-secondary" id="history-btn-1">History 1</button>
-            <button type="button" class="btn btn-secondary" id="history-btn-2">History 2</button>
-            <button type="button" class="btn btn-secondary" id="history-btn-3">History 3</button>
-            <button type="button" class="btn btn-secondary" id="history-btn-4">History 4</button>
-            <button type="button" class="btn btn-secondary" id="history-btn-5">History 5</button>
-            <button type="button" class="btn btn-secondary" id="history-btn-6">History 6</button>
-            <button type="button" class="btn btn-secondary" id="history-btn-7">History 7</button>
-            <button type="button" class="btn btn-secondary" id="history-btn-8">History 8</button>
-        </div>
-    </div>
-
-    <div class="current-location col-7">
-        <div class="column">
-            <h1 class="current-city" placeholder="Minneapolis">Minneapolis <span class="current-date"></span></h1>
-            <p class="current-temp" placeholder="Temp: 55°F">Temp: 55°F</p>
-            <p class="current-wind" placeholder="8.43 MPH"> Wind:8.43 MPH</p>
-            <p class="current-humidity" placeholder="44%">Humidity: 44%</p>
-        </div>
-    </div>
-    <div class="5-day-card-section">
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-1">
-            <div class="card-header" id="tomorrow"></div>
-            <div class="card-body">
-                <i class="fa-solid fa-sun"></i>
-                <p>Temp: <span></span></p>
-                <p>Wind: <span></span></p>
-                <p>Humidity: <span></span></p>
+    <div class="container"></div>
+        <div class="city-search">
+            <div class="row">
+                <input type="search" class="search-bar" placeholder="Minneapolis">
+                <button type="button" class="search-btn btn btn-primary">Search</button>
+                <button type="button" class="btn btn-secondary" id="history-btn-1">History 1</button>
+                <button type="button" class="btn btn-secondary" id="history-btn-2">History 2</button>
+                <button type="button" class="btn btn-secondary" id="history-btn-3">History 3</button>
+                <button type="button" class="btn btn-secondary" id="history-btn-4">History 4</button>
+                <button type="button" class="btn btn-secondary" id="history-btn-5">History 5</button>
+                <button type="button" class="btn btn-secondary" id="history-btn-6">History 6</button>
+                <button type="button" class="btn btn-secondary" id="history-btn-7">History 7</button>
+                <button type="button" class="btn btn-secondary" id="history-btn-8">History 8</button>
             </div>
         </div>
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-2">
-            <div class="card-header" id="tomorrow-plus-1">Header</div>
-            <div class="card-body">
-                <i class="fa-solid fa-sun"></i>
-                <p>Temp: <span></span></p>
-                <p>Wind: <span></span></p>
-                <p>Humidity: <span></span></p>
+        <div class="right-container">
+            <div class="current-location">
+                <h1 class="current-city" placeholder="Minneapolis">Minneapolis <span class="current-date"></span></h1>
+                <p class="current-temp" placeholder="Temp: 55°F">Temp: 55°F</p>
+                <p class="current-wind" placeholder="8.43 MPH"> Wind:8.43 MPH</p>
+                <p class="current-humidity" placeholder="44%">Humidity: 44%</p>
             </div>
         </div>
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-3">
-            <div class="card-header" id="tomorrow-plus-2">Header</div>
-            <div class="card-body">
-                <i class="fa-solid fa-sun"></i>
-                <p>Temp: <span></span></p>
-                <p>Wind: <span></span></p>
-                <p>Humidity: <span></span></p>
+        <div class="card-section">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-1">
+                <div class="card-header" id="tomorrow"></div>
+                <div class="card-body">
+                    <i class="fa-solid fa-sun"></i>
+                    <p>Temp: <span></span></p>
+                    <p>Wind: <span></span></p>
+                    <p>Humidity: <span></span></p>
+                </div>
             </div>
-        </div>
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-4">
-            <div class="card-header" id="tomorrow-plus-3">Header</div>
-            <div class="card-body">
-                <i class="fa-solid fa-sun"></i>
-                <p>Temp: <span></span></p>
-                <p>Wind: <span></span></p>
-                <p>Humidity: <span></span></p>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-2">
+                <div class="card-header" id="tomorrow-plus-1">Header</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-sun"></i>
+                    <p>Temp: <span></span></p>
+                    <p>Wind: <span></span></p>
+                    <p>Humidity: <span></span></p>
+                </div>
             </div>
-        </div>
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-5">
-            <div class="card-header" id="tomorrow-plus-4">Header</div>
-            <div class="card-body">
-                <i class="fa-solid fa-sun"></i>
-                <p>Temp: <span></span></p>
-                <p>Wind: <span></span></p>
-                <p>Humidity: <span></span></p>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-3">
+                <div class="card-header" id="tomorrow-plus-2">Header</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-sun"></i>
+                    <p>Temp: <span></span></p>
+                    <p>Wind: <span></span></p>
+                    <p>Humidity: <span></span></p>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-4">
+                <div class="card-header" id="tomorrow-plus-3">Header</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-sun"></i>
+                    <p>Temp: <span></span></p>
+                    <p>Wind: <span></span></p>
+                    <p>Humidity: <span></span></p>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="card-5">
+                <div class="card-header" id="tomorrow-plus-4">Header</div>
+                <div class="card-body">
+                    <i class="fa-solid fa-sun"></i>
+                    <p>Temp: <span></span></p>
+                    <p>Wind: <span></span></p>
+                    <p>Humidity: <span></span></p>
+                </div>
             </div>
         </div>
     </div>

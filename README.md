@@ -2,7 +2,7 @@
 
 ## Description
 
-Utilizing starter code, build a simple application for users to log hourly appointment entries throughout workday hours (9am to 5pm).
+Build a weather dashboard
 
 ## Installation
 
