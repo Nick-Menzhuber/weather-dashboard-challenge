@@ -19,11 +19,11 @@ body {
     margin-right: 10px;
 }
 .card-section {
-    margin-left: 33%;
+    margin-left: 25%;
     margin-top: 15px;
 }
 
-/*.city-search {
+.city-search {
     margin: 10px;
     padding: 10px;
 }
@@ -44,8 +44,12 @@ input {
 .search-btn {
     margin-bottom: 15px;
     border-bottom: 2px solid grey;
-}*/
+}
 
 .current-location {
     border: 2px solid black;
+}
+
+.card {
+    background-image: linear-gradient(to right, #13446d, #081e30);
 }
