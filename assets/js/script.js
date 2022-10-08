@@ -48,8 +48,6 @@ let tmrwPls4Wind = document.getElementsByClassName("tmrw-pls-4-wind");
 let tmrwPls4Humidity = document.getElementsByClassName("tmrw-pls-4-humidity");
 let tmrwPls4Icon = document.getElementsByClassName("tmrw-pls-4-icon");
 
-
-
 //sets current date
 let date = moment().format("(MM/DD/YYYY)");
 let displayDate = document.getElementsByClassName("current-date");
@@ -104,6 +102,7 @@ $(".search-btn").click(function () {
     $(currentTemp).text("Temp: " + fahrenheit +"°F");
     $(currentWind).text("Wind: " + (data.list[0].wind.speed) + " MPH");
     $(currentHumidity).text("Humidity: " + (data.list[0].main.humidity) + "%");
+    $(".current-location").show();
     //populates 5 day forecast cards
     $(tomorrowIcon).attr("src", "https://openweathermap.org/img/wn/" + (data.list[1].weather[0].icon) + "@2x.png")
     tomorrowKelvin = (data.list[1].main.temp)
@@ -139,13 +138,9 @@ $(".search-btn").click(function () {
     $(tmrwPls4Temp).text("Temp: " + tmrwPls4Fahrenheit + "°F");
     $(tmrwPls4Wind).text("Wind: " + (data.list[5].wind.speed) + " MPH");
     $(tmrwPls4Humidity).text("Humidity: " + (data.list[5].main.humidity) + "%");
+    $(".card").show();
   
     })
     
 });
 });
-
-
-
-
-
