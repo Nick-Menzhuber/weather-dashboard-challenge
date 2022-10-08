@@ -81,7 +81,7 @@ $("#tomorrow-plus-4").text(tomorrowPls4)
 $(".search-btn").click(function () {
     city  = $(this).siblings(".search-bar").val();
     localStorage.setItem("City", JSON.stringify(city));
-    var latLonURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + APIKey;
+    var latLonURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + APIKey;
     fetch(latLonURL)
     .then(function (response) {
     return response.json();
@@ -98,42 +98,42 @@ $(".search-btn").click(function () {
     })
     .then(function (data) {
     console.log(data.list[0].weather[0].icon);
-    $(currentIcon).attr("src", "http://openweathermap.org/img/wn/" + (data.list[0].weather[0].icon) + "@2x.png")
+    $(currentIcon).attr("src", "https://openweathermap.org/img/wn/" + (data.list[0].weather[0].icon) + "@2x.png")
     kelvin = (data.list[0].main.temp)
     fahrenheit = Math.round((kelvin - 273.15) * 1.8 + 32);
     $(currentTemp).text("Temp: " + fahrenheit +"°F");
     $(currentWind).text("Wind: " + (data.list[0].wind.speed) + " MPH");
     $(currentHumidity).text("Humidity: " + (data.list[0].main.humidity) + "%");
     //populates 5 day forecast cards
-    $(tomorrowIcon).attr("src", "http://openweathermap.org/img/wn/" + (data.list[1].weather[0].icon) + "@2x.png")
+    $(tomorrowIcon).attr("src", "https://openweathermap.org/img/wn/" + (data.list[1].weather[0].icon) + "@2x.png")
     tomorrowKelvin = (data.list[1].main.temp)
     tomorrowFahrenheit = Math.round((tomorrowKelvin -273.15) * 1.8 + 32);
     $(tomorrowTemp).text("Temp: " + tomorrowFahrenheit + "°F");
     $(tomorrowWind).text("Wind: " + (data.list[1].wind.speed) + " MPH");
     $(tomorrowHumidity).text("Humidity: " + (data.list[1].main.humidity) + "%");
 
-    $(tmrwPls1Icon).attr("src", "http://openweathermap.org/img/wn/" + (data.list[2].weather[0].icon) + "@2x.png")
+    $(tmrwPls1Icon).attr("src", "https://openweathermap.org/img/wn/" + (data.list[2].weather[0].icon) + "@2x.png")
     tmrwPls1Kelvin = (data.list[2].main.temp)
     tmrwPls1Fahrenheit = Math.round((tmrwPls1Kelvin -273.15) * 1.8 + 32);
     $(tmrwPls1Temp).text("Temp: " + tmrwPls1Fahrenheit + "°F");
     $(tmrwPls1Wind).text("Wind: " + (data.list[2].wind.speed) + " MPH");
     $(tmrwPls1Humidity).text("Humidity: " + (data.list[2].main.humidity) + "%");
 
-    $(tmrwPls2Icon).attr("src", "http://openweathermap.org/img/wn/" + (data.list[3].weather[0].icon) + "@2x.png")
+    $(tmrwPls2Icon).attr("src", "https://openweathermap.org/img/wn/" + (data.list[3].weather[0].icon) + "@2x.png")
     tmrwPls2Kelvin = (data.list[3].main.temp)
     tmrwPls2Fahrenheit = Math.round((tmrwPls2Kelvin -273.15) * 1.8 + 32);
     $(tmrwPls2Temp).text("Temp: " + tmrwPls2Fahrenheit + "°F");
     $(tmrwPls2Wind).text("Wind: " + (data.list[3].wind.speed) + " MPH");
     $(tmrwPls2Humidity).text("Humidity: " + (data.list[3].main.humidity) + "%");
 
-    $(tmrwPls3Icon).attr("src", "http://openweathermap.org/img/wn/" + (data.list[4].weather[0].icon) + "@2x.png")
+    $(tmrwPls3Icon).attr("src", "https://openweathermap.org/img/wn/" + (data.list[4].weather[0].icon) + "@2x.png")
     tmrwPls3Kelvin = (data.list[4].main.temp)
     tmrwPls3Fahrenheit = Math.round((tmrwPls3Kelvin -273.15) * 1.8 + 32);
     $(tmrwPls3Temp).text("Temp: " + tmrwPls3Fahrenheit + "°F");
     $(tmrwPls3Wind).text("Wind: " + (data.list[4].wind.speed) + " MPH");
     $(tmrwPls3Humidity).text("Humidity: " + (data.list[4].main.humidity) + "%");
 
-    $(tmrwPls4Icon).attr("src", "http://openweathermap.org/img/wn/" + (data.list[5].weather[0].icon) + "@2x.png")
+    $(tmrwPls4Icon).attr("src", "https://openweathermap.org/img/wn/" + (data.list[5].weather[0].icon) + "@2x.png")
     tmrwPls4Kelvin = (data.list[5].main.temp)
     tmrwPls4Fahrenheit = Math.round((tmrwPls4Kelvin -273.15) * 1.8 + 32);
     $(tmrwPls4Temp).text("Temp: " + tmrwPls4Fahrenheit + "°F");
