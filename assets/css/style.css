@@ -53,3 +53,7 @@ input {
 .card {
     background-image: linear-gradient(to right, #13446d, #081e30);
 }
+
+h1 {
+    display:inline;
+}

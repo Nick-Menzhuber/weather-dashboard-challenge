@@ -5,6 +5,11 @@ var city;
 var lat;
 var lon;
 let currentCity = document.getElementsByClassName("current-city");
+let kelvin;
+let fahrenheit;
+let currentTemp = document.getElementsByClassName("current-temp");
+let currentWind = document.getElementsByClassName("current-wind");
+let currentHumidity = document.getElementsByClassName("current-humidity");
 
 
 //sets current date
@@ -50,13 +55,23 @@ $(".search-btn").click(function (event) {
     console.log(data[0].lon);
     lat = (data[0].lat);
     lon = (data[0].lon);
+    console.log(data[0].name)
+    $(currentCity).text(data[0].name)
     var currentCond = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
     fetch(currentCond)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
-    console.log(data)
+    console.log(data.list[0].main.temp)
+    kelvin = (data.list[0].main.temp)
+    fahrenheit = Math.round((kelvin - 273.15) * 1.8 + 32);
+    $(currentTemp).text("Temp: " + fahrenheit +"°F");
+    console.log(data.list[0].wind.speed)
+    console.log(data.list[0].main.humidity)
+    $(currentWind).text("Wind: " + (data.list[0].wind.speed) + " MPH");
+    $(currentHumidity).text("Humidity: " + (data.list[0].main.humidity) + "%");
+
     //currentCity.innerText = data[0].name;
     })
    // getWeather();
