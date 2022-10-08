@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter Tight', sans-serif;
 }
@@ -14,8 +18,12 @@ body {
     margin: 10px;
     margin-right: 10px;
 }
+.card-section {
+    margin-left: 33%;
+    margin-top: 15px;
+}
 
-.city-search {
+/*.city-search {
     margin: 10px;
     padding: 10px;
 }
@@ -36,7 +44,7 @@ input {
 .search-btn {
     margin-bottom: 15px;
     border-bottom: 2px solid grey;
-}
+}*/
 
 .current-location {
     border: 2px solid black;

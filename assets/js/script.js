@@ -2,6 +2,9 @@
 //sets API key
 var APIKey = "2a5b5ec093cfb3f64b9b4198e9a6f39c";
 var city;
+var lat;
+var lon;
+let currentCity = document.getElementsByClassName("current-city");
 
 
 //sets current date
@@ -45,7 +48,17 @@ $(".search-btn").click(function (event) {
     .then(function (data) {
     console.log(data[0].lat);
     console.log(data[0].lon);
+    lat = (data[0].lat);
+    lon = (data[0].lon);
+    var currentCond = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
+    fetch(currentCond)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
     console.log(data)
+    //currentCity.innerText = data[0].name;
+    })
    // getWeather();
     
 });
