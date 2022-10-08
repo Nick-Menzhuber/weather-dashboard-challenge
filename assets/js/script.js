@@ -114,7 +114,7 @@ $(".search-btn").click(function (event) {
     $(tmrwPls2Wind).text("Wind: " + (data.list[3].wind.speed) + " MPH");
     $(tmrwPls2Humidity).text("Humidity: " + (data.list[3].main.humidity) + "%");
 
-    tmrwPls3wKelvin = (data.list[4].main.temp)
+    tmrwPls3Kelvin = (data.list[4].main.temp)
     tmrwPls3Fahrenheit = Math.round((tmrwPls3Kelvin -273.15) * 1.8 + 32);
     $(tmrwPls3Temp).text("Temp: " + tmrwPls3Fahrenheit + "°F");
     $(tmrwPls3Wind).text("Wind: " + (data.list[4].wind.speed) + " MPH");
