@@ -48,6 +48,8 @@ input {
 
 .current-location {
     border: 2px solid black;
+    background-color: bisque;
+    padding: 15px;
 }
 
 .card {

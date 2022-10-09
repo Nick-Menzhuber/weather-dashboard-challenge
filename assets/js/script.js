@@ -12,6 +12,7 @@ let fahrenheit;
 let currentTemp = document.getElementsByClassName("current-temp");
 let currentWind = document.getElementsByClassName("current-wind");
 let currentHumidity = document.getElementsByClassName("current-humidity");
+
 //5 day forecast variables
 let tomorrowKelvin;
 let tomorrowFahrenheit;
@@ -73,6 +74,13 @@ $("#tomorrow-plus-3").text(tomorrowPls3)
 let tomorrowRoughPls4 = moment(date, "MM/DD").add(5, "days");
 let tomorrowPls4 = tomorrowRoughPls4.format("MM/DD")
 $("#tomorrow-plus-4").text(tomorrowPls4)
+
+//equates search bar enter key with click event
+$(".search-bar").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $(".search-btn").click();
+    }
+});
 
 //sets functionality for search button and api calls
 
