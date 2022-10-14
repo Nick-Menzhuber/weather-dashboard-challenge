@@ -10,15 +10,15 @@ N/A
 
 ## Usage
 
-URL:[https://nick-menzhuber.github.io/calendar-app-challenge-2/](https://nick-menzhuber.github.io/calendar-app-challenge-2/)
+URL:[https://nick-menzhuber.github.io/weather-dashboard-challenge/](https://nick-menzhuber.github.io/weather-dashboard-challenge/)
 
-When the page loads, the current hour will be highlighted in red (if applicable). Future hours will be highlighted in green (if applicable). Users may click into any time slot and enter an appointment, clicking on the save button to the right of the time slot to save the entry to local storage so that it will persist if the user reloads the page. The user may clear all entries with the "Clear All" button at the bottom of the page.
+A simple weather dashboard which allows the user to enter a city name into the search field and will then present the user with the current conditions in that location (based on latitude and longitude) as well as forecasted conditions for the next 5 days. Includes icons depicting weather conditions, temperature, wind speed, and humidity readings.
 
-![Screenshot:](/assets/images/screenshot.png)
+![Screenshot:](./assets/images/screenshot.png)
 
 ## Credits
 
-Starter code by [Xandromus](https://github.com/Xandromus)
+API data sourced from [https://openweathermap.org/](Open Weather)
 
 ## License
 
