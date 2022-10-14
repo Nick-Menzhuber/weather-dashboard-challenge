@@ -18,7 +18,7 @@ A simple weather dashboard which allows the user to enter a city name into the s
 
 ## Credits
 
-API data sourced from [https://openweathermap.org/](Open Weather)
+API data sourced from Open Weather: [https://openweathermap.org/]
 
 ## License
 
